@@ -116,7 +116,7 @@
               <div class="custom-btn-group mt-4">
                 <a
                   target="_blank"
-                  href="https://drive.google.com/file/d/1LGh09TYG9wpAMF3i-Q_AhfK6uWb9D5qs/view?usp=sharing"
+                  href="https://drive.google.com/drive/folders/1V_AO_vBcS7lCJkYTR25E1UbBvRBBKVwV?usp=sharing"
                   class="btn mr-lg-2 custom-btn"
                   ><i class="uil uil-file-alt"></i> Download Resume</a
                 >
@@ -186,6 +186,24 @@
                   />
                 </div>
               </div>
+            <div class="item">
+                <div class="project-info">
+                  <img
+                    src="images/project/img5.png"
+                    class="img-fluid"
+                    alt="project image"
+                  />
+                </div>
+              </div>
+            <div class="item">
+                <div class="project-info">
+                  <img
+                    src="images/project/img6.png"
+                    class="img-fluid"
+                    alt="project image"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -201,7 +219,41 @@
         <div class="row">
           <div class="col-lg-6 col-12">
             <h2 class="mb-4">Experiences</h2>
-
+            <div class="timeline">
+              <div class="timeline-wrapper">
+                <div class="timeline-yr">
+                  <span>2024</span>
+                </div>
+                <div class="timeline-info">
+                  <h3 class="mb-4">
+                    <span>Gammastack, Indore</span
+                    ><small>Solution Engineer</small>
+                  </h3>
+                  <ul style="list-style-type: disc">
+                    <li>
+                      <p>
+                        Led a team of 8+ developers, delivering scalable, high-performance iGaming platforms, ensuring efficient team collaboration under pressure and working on multiple projects
+                      </p>
+                    </li>  
+                    <li>
+                      <p>
+                        Leveraged Node.js, Express, and PostgreSQL for backend development, utilizing non-blocking I/O and Microservices Architecture to boost functionality.
+                      </p>
+                    </li>  
+                    <li>
+                      <p>
+                        Integrated RESTful APIs and third-party services to drive rapid development and seamless app performance.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Managed high-performance data with Redis and Cron Scheduler for real-time caching and task automation, optimizing system efficiency.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="timeline">
               <div class="timeline-wrapper">
                 <div class="timeline-yr">
@@ -225,20 +277,6 @@
                         Under Pressure in Team Collaboration.
                       </p>
                     </li>
-                    <li>
-                      <p>
-                        Leveraging Non-blocking I/O , Microservices Architecture
-                        to Supercharge Application Functionality and Rapid
-                        Development Enabled Through Integration of RESTful APIs
-                        and Third-Party Services .
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Seamless Translation of Design Mockups into Interactive
-                        Web Interfaces through UI/UX Collaboration.
-                      </p>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -251,12 +289,12 @@
             <div class="timeline">
               <div class="timeline-wrapper">
                 <div class="timeline-yr">
-                  <span>2018</span>
+                  <span>2022</span>
                 </div>
                 <div class="timeline-info">
                   <h3>
                     <span>Malwa Institute Of Technology , Indore</span
-                    ><small>B.Tech in Computer Science </small>
+                    ><small>Bachelor Of Technology in Computer Science </small>
                   </h3>
                   <p>Completed 4 years of B.Tech degree with 81.7%</p>
                 </div>
@@ -269,7 +307,7 @@
                 <div class="timeline-info">
                   <h3>
                     <span>Bihar Secondary Education Board</span
-                    ><small>BSEB</small>
+                    ><small class="ml-0">BSEB</small>
                   </h3>
                   <p>Completed Intermediate in PCM with 69%</p>
                 </div>
@@ -338,9 +376,6 @@
               <img src="images/icons/Express.svg" alt="tech-icons" />
             </div>
             <div class="mx-auto skills">
-              <img src="images/icons/SQLite.svg" alt="tech-icons" />
-            </div>
-            <div class="mx-auto skills">
               <img src="images/icons/MySQL.svg" alt="tech-icons" />
             </div>
             <div class="mx-auto skills">
@@ -348,6 +383,9 @@
             </div>
             <div class="mx-auto skills">
               <img src="images/icons/PostgresSQL.svg" alt="tech-icons" />
+            </div> 
+            <div class="mx-auto skills">
+              <img src="images/icons/Redis.svg" alt="tech-icons" />
             </div>
             <div class="mx-auto skills">
               <img src="images/icons/Docker.svg" alt="tech-icons" />
@@ -399,13 +437,16 @@
                   <a href="mailto:thekishanabhishek@gmail.com"
                     >thekishanabhishek@gmail.com</a
                   >
+                </p> 
+                <p>
+                  <a href="https://wa.link/6ebyhx" target="_blank">+91 8271976782</a>
                 </p>
               </div>
 
               <ul class="social-links">
                 <li>
                   <a
-                    href="http://linkedin.com/in/kishan09"
+                    href="http://linkedin.com/in/thekishan"
                     class="uil uil--linkedin"
                     data-toggle="tooltip"
                     data-placement="left"
@@ -493,15 +534,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-12">
-            <p class="copyright-text text-center">
-              Copyright &copy; 2024 All rights reserved
-            </p>
+            <p id="copyright" class="copyright-text text-center"></p>
             <p class="copyright-text text-center">Designed with ❤️ by Kishan</p>
           </div>
         </div>
       </div>
     </footer>
-
+    <script>
+      const startYear = 2025;
+      const currentYear = new Date().getFullYear();
+      document.getElementById('copyright').innerHTML = `Copyright &copy; ${currentYear} All rights reserved`;
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
